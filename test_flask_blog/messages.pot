@@ -1,0 +1,318 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-09-13 16:28+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app/__init__.py:23
+msgid "Please log in to access this page."
+msgstr ""
+
+#: app/translate.py:10
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: app/translate.py:18
+msgid "Error: the translation service failed."
+msgstr ""
+
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
+msgid "Username"
+msgstr ""
+
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:42
+msgid "Password"
+msgstr ""
+
+#: app/auth/forms.py:11
+msgid "Remember Me"
+msgstr ""
+
+#: app/auth/forms.py:12 app/templates/auth/login.html:6
+msgid "Sign In"
+msgstr ""
+
+#: app/auth/forms.py:17 app/auth/forms.py:37
+msgid "Email"
+msgstr ""
+
+#: app/auth/forms.py:20 app/auth/forms.py:44
+msgid "Repeat Password"
+msgstr ""
+
+#: app/auth/forms.py:21 app/main/forms.py:11
+msgid "First Name"
+msgstr ""
+
+#: app/auth/forms.py:22 app/main/forms.py:12
+msgid "Last Name"
+msgstr ""
+
+#: app/auth/forms.py:23 app/templates/auth/register.html:5
+msgid "Register"
+msgstr ""
+
+#: app/auth/forms.py:28 app/main/forms.py:25
+msgid "Please use a different username."
+msgstr ""
+
+#: app/auth/forms.py:33
+msgid "Please use a different email address."
+msgstr ""
+
+#: app/auth/forms.py:38 app/auth/forms.py:45
+msgid "Request Password Reset"
+msgstr ""
+
+#: app/auth/routes.py:21
+msgid "Invalid username or password"
+msgstr ""
+
+#: app/auth/routes.py:48
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: app/auth/routes.py:62
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: app/auth/routes.py:79
+msgid "Your password has been reset."
+msgstr ""
+
+#: app/main/forms.py:13
+msgid "About me"
+msgstr ""
+
+#: app/main/forms.py:14 app/main/forms.py:30 app/main/forms.py:47
+msgid "Submit"
+msgstr ""
+
+#: app/main/forms.py:29
+msgid "Say something"
+msgstr ""
+
+#: app/main/forms.py:34 app/main/routes.py:152
+msgid "Search"
+msgstr ""
+
+#: app/main/forms.py:45
+msgid "Message"
+msgstr ""
+
+#: app/main/routes.py:37
+msgid "Your post is now live!"
+msgstr ""
+
+#: app/main/routes.py:89
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/main/routes.py:105 app/main/routes.py:121
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: app/main/routes.py:108
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: app/main/routes.py:112
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: app/main/routes.py:124
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: app/main/routes.py:128
+#, python-format
+msgid "You are not following %(username)s."
+msgstr ""
+
+#: app/main/routes.py:167
+msgid "Your message has been sent."
+msgstr ""
+
+#: app/main/routes.py:169
+msgid "Send Message"
+msgstr ""
+
+#: app/main/routes.py:195
+msgid "An export task is currently in progress"
+msgstr ""
+
+#: app/main/routes.py:197
+msgid "Exporting posts..."
+msgstr ""
+
+#: app/templates/_post.html:15
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: app/templates/_post.html:18
+#, python-format
+msgid "%(text)s"
+msgstr ""
+
+#: app/templates/_post.html:21
+msgid "Translate"
+msgstr ""
+
+#: app/templates/base.html:28
+msgid "Posts"
+msgstr ""
+
+#: app/templates/auth/login.html:14 app/templates/base.html:40
+msgid "Click to Register!"
+msgstr ""
+
+#: app/templates/base.html:43
+msgid "Login"
+msgstr ""
+
+#: app/templates/base.html:47
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base.html:50
+msgid "Logout"
+msgstr ""
+
+#: app/templates/edit_profile.html:6
+msgid "Edit Profile"
+msgstr ""
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr ""
+
+#: app/templates/index.html:19 app/templates/user.html:32
+msgid "Newer posts"
+msgstr ""
+
+#: app/templates/index.html:24 app/templates/user.html:37
+msgid "Older posts"
+msgstr ""
+
+#: app/templates/user.html:8
+#, python-format
+msgid "Profile: %(username)s!"
+msgstr ""
+
+#: app/templates/user.html:11
+#, python-format
+msgid "Last seen on: %(when)s"
+msgstr ""
+
+#: app/templates/user.html:13
+msgid "followers"
+msgstr ""
+
+#: app/templates/user.html:13
+msgid "following."
+msgstr ""
+
+#: app/templates/user.html:15
+msgid "You can edit your profile"
+msgstr ""
+
+#: app/templates/user.html:15
+msgid "here"
+msgstr ""
+
+#: app/templates/user.html:17
+msgid "Follow"
+msgstr ""
+
+#: app/templates/user.html:19
+msgid "Unfollow"
+msgstr ""
+
+#: app/templates/auth/login.html:13
+msgid "New User?"
+msgstr ""
+
+#: app/templates/auth/login.html:16
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: app/templates/auth/login.html:17
+msgid "Click to Reset It"
+msgstr ""
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr ""
+
+#: app/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr ""
+
+#: app/templates/email/reset_password.html:1
+#, python-format
+msgid "Уважаемый %(user)s"
+msgstr ""
+
+#: app/templates/email/reset_password.html:3
+msgid "Чтобы сбросить пароль"
+msgstr ""
+
+#: app/templates/email/reset_password.html:5
+msgid "кликните по ссылке"
+msgstr ""
+
+#: app/templates/email/reset_password.html:8
+msgid ""
+"Кроме того, вы можете вставить следующую ссылку в адресную строку "
+"браузера:"
+msgstr ""
+
+#: app/templates/email/reset_password.html:10
+msgid "Если вы не запрашивали сброс пароля, просто проигнорируйте это сообщение."
+msgstr ""
+
+#: app/templates/email/reset_password.html:11
+msgid "С Уважением,"
+msgstr ""
+
+#: app/templates/email/reset_password.html:12
+msgid "Команда Microblog"
+msgstr ""
+
+#: app/templates/error/404.html:4
+msgid "File Not Found"
+msgstr ""
+
+#: app/templates/error/404.html:5 app/templates/error/500.html:6
+msgid "Back"
+msgstr ""
+
+#: app/templates/error/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/error/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
