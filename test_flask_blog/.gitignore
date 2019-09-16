@@ -4,3 +4,5 @@ __pycache__
 run_env.sh
 logs/
 .env
+.vagrant
+.log
