@@ -1,8 +1,10 @@
 import os
 from dotenv import load_dotenv
 
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 load_dotenv(os.path.join(basedir, '.env'))
+
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
@@ -22,3 +24,6 @@ class Config(object):
     POSTS_PER_PAGE = 20
 
     LANGUAGES = ['en', 'ru', 'be', 'es']
+    YANDEX_TRANSLATE_API = os.environ.get('YANDEX_TRANSLATE_API')
+
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
