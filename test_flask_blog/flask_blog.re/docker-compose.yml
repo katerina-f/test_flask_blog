@@ -1,0 +1,16 @@
+version: '3'
+
+volumes:
+  flask_blog.re:
+    external: true
+
+services:
+  redis:
+    container_name: flask_blog.re
+    image: bitnami/redis:latest
+    ports:
+      - 6379:6379
+    volumes:
+      - flask_blog.re:/bitnami/redis/data
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes

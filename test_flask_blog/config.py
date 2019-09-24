@@ -27,3 +27,4 @@ class Config(object):
     YANDEX_TRANSLATE_API = os.environ.get('YANDEX_TRANSLATE_API')
 
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'

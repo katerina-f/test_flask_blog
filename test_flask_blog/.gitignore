@@ -7,3 +7,4 @@ logs/
 .vagrant/
 *.log
 .vscode/
+.pyc

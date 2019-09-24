@@ -178,7 +178,7 @@ def messages():
     db.session.commit()
     page = request.args.get('page', 1, type=int)
     messages = current_user.messages_received.order_by(
-        Message.timestamp.desc()).paginate(
+        Message.created.desc()).paginate(
             page, current_app.config['POSTS_PER_PAGE'], False)
     next_url = url_for('main.messages', page=messages.next_num) \
         if messages.has_next else None
@@ -210,3 +210,10 @@ def notifications():
         'data': n.get_data(),
         'timestamp': n.timestamp
     } for n in notifications])
+
+
+@bp.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    return render_template('user_popup.html', user=user)

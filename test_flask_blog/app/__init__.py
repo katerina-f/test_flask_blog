@@ -1,10 +1,11 @@
 import os
 import logging
 
+import rq
 from logging.handlers import SMTPHandler
 from logging.handlers import RotatingFileHandler
 from elasticsearch import Elasticsearch
-
+from redis import Redis
 
 from flask import Flask
 from flask import request
@@ -36,6 +37,9 @@ def create_app(config_class=Config):
     app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
         if app.config['ELASTICSEARCH_URL'] else None
 
+    app.redis = Redis.from_url(app.config['REDIS_URL'])
+    app.task_queue = rq.Queue('runserver-tasks', connection=app.redis)
+
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
@@ -52,6 +56,9 @@ def create_app(config_class=Config):
 
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
+
+    from app.api import bp as api_bp
+    app.register_blueprint(api_bp, url_prefix='/api')
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
